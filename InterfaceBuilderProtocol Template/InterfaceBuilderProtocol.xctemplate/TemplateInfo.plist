@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DefaultCompletionName</key>
+	<string>___VARIABLE_extensionFrom___</string>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>Description</key>
+	<string>InterfaceBuilderProtocol</string>
+	<key>Summary</key>
+	<string>InterfaceBuilderProtocol</string>
+	<key>SortOrder</key>
+	<string>1</string>
+	<key>AllowedTypes</key>
+	<array>
+		<string>public.swift-source</string>
+	</array>
+	<key>MainTemplateFile</key>
+	<string>___FILEBASENAMEASIDENTIFIER___ +InterfaceBuilderProtocol.swift</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+			<key>Name</key>
+			<string>Extension from:</string>
+			<key>Identifier</key>
+			<string>extensionFrom</string>
+			<key>Required</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Identifier</key>
+			<string>CreateExtraFiles </string>
+			<key>Name</key>
+			<string>Create extra files</string>
+			<key>Description</key>
+			<string>Whether to create the ViewController and/or the ViewModel file with the same name</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>false</string>
+		</dict>
+		<dict>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Identifier</key>
+			<string>creationOptions</string>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>CreateExtraFiles </key>
+				<string>true</string>
+			</dict>
+			<key>Required</key>
+			<false/>
+			<key>Name</key>
+			<string>Also create:</string>
+			<key>Description</key>
+			<string>Creation option</string>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Default</key>
+			<string>ViewController</string>
+			<key>Values</key>
+			<array>
+				<string>ViewController</string>
+				<string>ViewController &amp; ViewModel</string>
+			</array>
+		</dict>
+		<dict>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Identifier</key>
+			<string>viewModelName</string>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>CreateExtraFiles </key>
+				<string>true</string>
+			</dict>
+			<key>Name</key>
+			<string>View model name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Description</key>
+			<string>The name of the related view model</string>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+	</array>
+</dict>
+</plist>
